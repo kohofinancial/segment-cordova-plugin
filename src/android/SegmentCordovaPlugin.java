@@ -707,7 +707,7 @@ public class SegmentCordovaPlugin extends CordovaPlugin {
 
                         while (integrationInputsItr.hasNext()) {
                             integrationOptionKey = integrationInputsItr.next();
-                            integrationOptionValue = integrationInputs.get(key);
+                            integrationOptionValue = integrationInputs.get(integrationOptionKey);
                             integrationOptions.put(integrationOptionKey, integrationOptionValue);
                         }
                         options.setIntegrationOptions(key, integrationOptions);

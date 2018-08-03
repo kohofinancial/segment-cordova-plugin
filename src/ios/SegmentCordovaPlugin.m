@@ -73,9 +73,9 @@
 }
 
 - (void)identify:(CDVInvokedUrlCommand*)command {
-	CDVPluginResult* pluginResult = nil;
+    CDVPluginResult* pluginResult = nil;
 
-	NSDictionary *inputs = nil;
+    NSDictionary *inputs = nil;
     NSString* userId = nil;
     NSDictionary* traits = nil;
     NSDictionary* options = nil;
@@ -97,9 +97,9 @@
 }
 
 - (void)track:(CDVInvokedUrlCommand*)command {
-	CDVPluginResult* pluginResult = nil;
+    CDVPluginResult* pluginResult = nil;
 
-	NSDictionary *inputs = nil;
+    NSDictionary *inputs = nil;
     NSString* event = nil;
     NSDictionary* properties = nil;
     NSDictionary* options = nil;
@@ -126,9 +126,9 @@
 }
 
 - (void)screen:(CDVInvokedUrlCommand*)command {
-	CDVPluginResult* pluginResult = nil;
+    CDVPluginResult* pluginResult = nil;
 
-	NSDictionary *inputs = nil;
+    NSDictionary *inputs = nil;
     NSString* name = nil;
     NSDictionary* properties = nil;
     NSDictionary* options = nil;
@@ -154,9 +154,9 @@
 }
 
 - (void)group:(CDVInvokedUrlCommand*)command {
-	CDVPluginResult* pluginResult = nil;
+    CDVPluginResult* pluginResult = nil;
 
-	NSDictionary *inputs = nil;
+    NSDictionary *inputs = nil;
     NSString* groupId = nil;
     NSDictionary* traits = nil;
     NSDictionary* options = nil;
@@ -182,9 +182,9 @@
 }
 
 - (void)alias:(CDVInvokedUrlCommand*)command {
-	CDVPluginResult* pluginResult = nil;
+    CDVPluginResult* pluginResult = nil;
 
-	NSDictionary *inputs = nil;
+    NSDictionary *inputs = nil;
     NSString* newId = nil;
     NSDictionary* options = nil;
 
@@ -208,7 +208,7 @@
 }
 
 - (void)getAnonymousId:(CDVInvokedUrlCommand*)command {
-	CDVPluginResult* pluginResult = nil;
+    CDVPluginResult* pluginResult = nil;
 
     NSString* anonymousId = [[SEGAnalytics sharedAnalytics] getAnonymousId];
 
@@ -219,7 +219,7 @@
 }
 
 - (void)reset:(CDVInvokedUrlCommand*)command {
-	CDVPluginResult* pluginResult = nil;
+    CDVPluginResult* pluginResult = nil;
 
     [[SEGAnalytics sharedAnalytics] reset];
 

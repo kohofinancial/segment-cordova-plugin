@@ -51,8 +51,8 @@ window.Segment.identity({
 });
 ```
 
-## The Anatomy of a `.startWithConfiguration()` 
-You can initialize number of options to setup SDK.
+## Configuration options for `.startWithConfiguration()` 
+You can configurate number of options to setup SDK.
 
 #### trackApplicationLifecycleEvents
 Record certain application lifecycle events like `Application Opened`, `Application Installed`, `Application Updated`. (Default: false)
