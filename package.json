@@ -1,0 +1,21 @@
+{
+    "name": "segment-cordova-plugin",
+    "version": "1.0.0",
+    "description": "Segment Cordova Plugin",
+    "cordova": {
+        "id": "segment-cordova-plugin",
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jamesyoon11/segment-cordova-plugin.git"
+    },
+    "dependencies": {
+        "xcode": "0.8.9"
+    },
+    "author": "James Yoon",
+    "license": "MIT"
+}

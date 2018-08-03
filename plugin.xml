@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="segment-cordova-plugin"
+	xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	version="1.0.0" >
+
+    <name>SegmentCordovaPlugin</name>
+    <license>MIT License</license>
+    <description>Cordova plugin for the Segment SDK</description>
+    <author>James Yoon</author>
+
+    <access origin="api.segment.io" />
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module name="SegmentCordovaPlugin" src="www/SegmentCordovaPlugin.js">
+        <clobbers target="Segment" />
+    </js-module>
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="SegmentCordovaPlugin">
+                <param name="android-package" value="com.segment.cordova.plugin.SegmentCordovaPlugin" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" >
+        	<uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        </config-file>
+        <source-file src="src/android/SegmentCordovaPlugin.java" target-dir="src/com/segment/cordova/plugin" />
+
+        <framework src="com.segment.analytics.android:analytics:4.3.0"/>
+    </platform>
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="SegmentCordovaPlugin">
+                <param name="ios-package" value="SegmentCordovaPlugin" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/SegmentCordovaPlugin.h" target-dir="SegmentCordovaPlugin"/>
+        <source-file src="src/ios/SegmentCordovaPlugin.m" target-dir="SegmentCordovaPlugin"/>
+
+        <!-- If want to use CocoaPods. Remove framework and hook, and use this -->
+        <!-- <framework src="Analytics" type="podspec" spec="~> 3.0"/> -->
+
+        <!-- If use Cordova7, use "embed" so it can put custom framework in the 'Embedded Binaries' section -->
+        <!-- Be sure to remove hook -->
+        <!-- https://cordova.apache.org/docs/en/latest/plugin_ref/spec.html#framework -->
+        <!-- <framework src="lib/ios/Analytics.framework" custom="true" embed="true"/> -->
+        <framework src="lib/ios/Analytics.framework" custom="true" />
+
+        <!-- Cordova version less than 7 won't support embed feature in framework. -->
+        <!-- Alternative solution to add 'Embedded Binaries', use a hook -->
+        <hook type="after_plugin_install" src="hooks/addEmbedded.js" />
+
+    </platform>
+</plugin>
