@@ -4,8 +4,8 @@
 This version of the plugin uses versions `3.6.9` (iOS) and `4.3.0` (Android) of the Segment mobile SDK.
 You can view Android and iOS SDK sources on Github.
 
-https://github.com/segmentio/analytics-android
-https://github.com/segmentio/analytics-ios
+* https://github.com/segmentio/analytics-android
+* https://github.com/segmentio/analytics-ios
 
 Prerequisites:
 * Segment API keys 
@@ -52,22 +52,22 @@ window.Segment.identity({
 ```
 
 ## Configuration options for `.startWithConfiguration()` 
-You can configurate number of options to setup SDK.
+You can configure number of options to setup SDK.
 
-#### trackApplicationLifecycleEvents
+#### trackApplicationLifecycleEvents (Android and iOS)
 Record certain application lifecycle events like `Application Opened`, `Application Installed`, `Application Updated`. (Default: false)
 
-#### recordScreenViews
+#### recordScreenViews (Android and iOS)
 Record screen views automatically. It's not useful for the Cordova PhoneGap app. (Default: false)
 
-#### defaultOptions
+#### defaultOptions (Android and iOS)
 Specify which integrations should be enabled or not for all calls. (Default: All)
 
-#### trackAttributionInformation
+#### trackAttributionInformation (Android and iOS)
 Record attribution data from enabled providers using the mobile service. (Default: false)
 
-#### flushQueueSize
-The queue size at which to flush events. (Default: 20, Max: 250 for Android, 100 for iOS) 
+#### flushQueueSize (Android and iOS)
+The queue size at which to flush events. (Default: 20, Max: 250 for Android and 100 for iOS) 
 
 #### collectDeviceId (Android)
 Record the device id. (Default: true)
