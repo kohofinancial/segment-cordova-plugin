@@ -60,9 +60,7 @@ public class SegmentCordovaPlugin extends CordovaPlugin {
             } else if (ACTION_ALIAS.equals(action)) {
                 this.alias(args.getJSONObject(0), callbackContext);
                 return true;
-            }
-        } else {
-            if (ACTION_GET_ANONYMOUS_ID.equals(action)) {
+            } else if (ACTION_GET_ANONYMOUS_ID.equals(action)) {
                 this.getAnonymousId(callbackContext);
                 return true;
             } else if (ACTION_RESET.equals(action)) {
