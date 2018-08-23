@@ -2,7 +2,7 @@
 <plugin id="segment-cordova-plugin"
 	xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	version="1.0.2" >
+	version="1.0.3" >
 
     <name>SegmentCordovaPlugin</name>
     <license>MIT License</license>
