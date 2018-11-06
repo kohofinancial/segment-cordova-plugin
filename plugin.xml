@@ -43,18 +43,6 @@
         <header-file src="src/ios/SegmentCordovaPlugin.h" target-dir="SegmentCordovaPlugin"/>
         <source-file src="src/ios/SegmentCordovaPlugin.m" target-dir="SegmentCordovaPlugin"/>
 
-        <!-- If want to use CocoaPods. Remove framework and hook, and use this -->
-        <!-- <framework src="Analytics" type="podspec" spec="~> 3.0"/> -->
-
-        <!-- If use Cordova7, use "embed" so it can put custom framework in the 'Embedded Binaries' section -->
-        <!-- Be sure to remove hook -->
-        <!-- https://cordova.apache.org/docs/en/latest/plugin_ref/spec.html#framework -->
-        <!-- <framework src="lib/ios/Analytics.framework" custom="true" embed="true"/> -->
-        <framework src="lib/ios/Analytics.framework" custom="true" />
-
-        <!-- Cordova version less than 7 won't support embed feature in framework. -->
-        <!-- Alternative solution to add 'Embedded Binaries', use a hook -->
-        <hook type="after_plugin_install" src="hooks/addEmbedded.js" />
-
+        <framework src="Analytics" type="podspec" spec="~> 3.0"/>
     </platform>
 </plugin>
