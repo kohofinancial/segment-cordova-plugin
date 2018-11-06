@@ -1,31 +1,40 @@
 {
-    "name": "segment-cordova-plugin",
-    "version": "1.1.1",
-    "description": "Segment Cordova Plugin",
-    "cordova": {
-        "id": "segment-cordova-plugin",
-        "platforms": [
-            "android",
-            "ios"
-        ]
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/jamesyoon11/segment-cordova-plugin.git"
-    },
-    "dependencies": {},
-    "keywords": [
-        "cordova",
-        "segment",
-        "integration",
-        "analytics",
-        "ecosystem:cordova",
-        "cordova-android",
-        "cordova-ios"
-    ],
-    "author": "James Yoon",
-    "license": "MIT",
-    "devDependencies": {
-        "xcode": "0.8.9"
+  "name": "segment-cordova-plugin",
+  "version": "2.0.0",
+  "description": "Segment Cordova Plugin",
+  "cordova": {
+    "id": "segment-cordova-plugin",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kohofinancial/segment-cordova-plugin.git"
+  },
+  "dependencies": {},
+  "keywords": [
+    "cordova",
+    "segment",
+    "integration",
+    "analytics",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "James Yoon",
+  "license": "MIT",
+  "devDependencies": {
+    "xcode": "1.0.0"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "2.0.0": {
+        "cordova": ">7.0.0",
+        "cordova-ios": ">4.3.0",
+        "cordova-android": ">7.0.0"
+      }
     }
+  }
 }
