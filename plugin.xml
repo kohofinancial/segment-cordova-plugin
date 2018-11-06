@@ -2,7 +2,7 @@
 <plugin id="segment-cordova-plugin"
 	xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	version="1.1.0" >
+	version="2.0.0" >
 
     <name>SegmentCordovaPlugin</name>
     <license>MIT License</license>
@@ -10,10 +10,6 @@
     <author>James Yoon</author>
 
     <access origin="api.segment.io" />
-
-    <engines>
-        <engine name="cordova" version=">=3.0.0" />
-    </engines>
 
     <js-module name="SegmentCordovaPlugin" src="www/SegmentCordovaPlugin.js">
         <clobbers target="Segment" />

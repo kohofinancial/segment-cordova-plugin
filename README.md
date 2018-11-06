@@ -14,7 +14,7 @@ Prerequisites:
 
 You can install the latest version of the plugin directly from git through the Cordova CLI:
 ```bash
-cordova plugin add https://github.com/jamesyoon11/segment-cordova-plugin.git
+cordova plugin add https://github.com/kohofinancial/segment-cordova-plugin.git
 ```
 
 ## Usage
