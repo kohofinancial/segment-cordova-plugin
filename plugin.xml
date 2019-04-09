@@ -27,6 +27,7 @@
         <source-file src="src/android/SegmentCordovaPlugin.java" target-dir="src/com/segment/cordova/plugin" />
 
         <framework src="com.segment.analytics.android:analytics:4.3.0"/>
+        <framework src="com.segment.analytics.android.integrations:mixpanel:2.0.+"/>
     </platform>
 
     <platform name="ios">
@@ -40,5 +41,6 @@
         <source-file src="src/ios/SegmentCordovaPlugin.m" target-dir="SegmentCordovaPlugin"/>
 
         <framework src="Analytics" type="podspec" spec="~> 3.0"/>
+        <framework src="Segment-Mixpanel" type="podspec" spec="~> 1.3.0" />
     </platform>
 </plugin>
