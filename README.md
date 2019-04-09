@@ -96,6 +96,10 @@ Record in-app purchases from the App Store. (Default: false)
 #### trackPushNotifications (iOS)
 Record push notifications.  (Default: false)
 
+#### enableMixpanelIntegration (Android and iOS)
+If you're using Mixpanel as a destination, enable this to use a Device-based Connection Mode.  This
+is especially important for certain Mixpanel features, like aliasing. (Default: false)
+
 **Example Usage:**
 ```javascript
 window.Segment.startWithConfiguration(IOS_OR_ANDROID_KEY, {
