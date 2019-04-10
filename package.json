@@ -1,6 +1,6 @@
 {
   "name": "segment-cordova-plugin",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Segment Cordova Plugin",
   "cordova": {
     "id": "segment-cordova-plugin",
@@ -30,7 +30,7 @@
   },
   "engines": {
     "cordovaDependencies": {
-      "2.0.0": {
+      "2.1.0": {
         "cordova": ">7.0.0",
         "cordova-ios": ">4.3.0",
         "cordova-android": ">7.0.0"
