@@ -1,7 +1,5 @@
 #import "SegmentCordovaPlugin.h"
 
-#import <Segment-Mixpanel/SEGMixpanelIntegrationFactory.h>
-
 @implementation SegmentCordovaPlugin
 
 - (void) pluginInitialize {
@@ -62,9 +60,6 @@
                 }
                 if ([configOptions objectForKey:@"defaultOptions"] != nil) {
                     configuration.launchOptions = [configOptions objectForKey:@"defaultOptions"];
-                }
-                if ([configOptions objectForKey:@"enableMixpanelIntegration"] != nil) {
-                    [configuration use:[SEGMixpanelIntegrationFactory instance]];
                 }
             }
         }
