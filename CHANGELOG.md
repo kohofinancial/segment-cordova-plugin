@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.0.0] - 2020-01-13
+- Drop support for Mixpanel
+
 ## [2.1.0] - 2019-04-09
 - Support Mixpanel Device-based Connection Mode
 
