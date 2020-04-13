@@ -26,7 +26,7 @@
         </config-file>
         <source-file src="src/android/SegmentCordovaPlugin.java" target-dir="src/com/segment/cordova/plugin" />
 
-        <framework src="com.segment.analytics.android:analytics:4.3.0"/>
+        <framework src="com.segment.analytics.android:analytics:4.3.1"/>
     </platform>
 
     <platform name="ios">
@@ -39,6 +39,6 @@
         <header-file src="src/ios/SegmentCordovaPlugin.h" target-dir="SegmentCordovaPlugin"/>
         <source-file src="src/ios/SegmentCordovaPlugin.m" target-dir="SegmentCordovaPlugin"/>
 
-        <framework src="Analytics" type="podspec" spec="3.7.0"/>
+        <framework src="Analytics" type="podspec" spec="3.7.1"/>
     </platform>
 </plugin>
