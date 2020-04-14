@@ -26,7 +26,10 @@
         </config-file>
         <source-file src="src/android/SegmentCordovaPlugin.java" target-dir="src/com/segment/cordova/plugin" />
 
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+
         <framework src="com.segment.analytics.android:analytics:4.3.1"/>
+        <framework src="com.appboy:appboy-segment-integration:4.0.0"/>
     </platform>
 
     <platform name="ios">
@@ -39,6 +42,14 @@
         <header-file src="src/ios/SegmentCordovaPlugin.h" target-dir="SegmentCordovaPlugin"/>
         <source-file src="src/ios/SegmentCordovaPlugin.m" target-dir="SegmentCordovaPlugin"/>
 
-        <framework src="Analytics" type="podspec" spec="3.7.1"/>
+        <podspec>
+            <config>
+                <source url="https://cdn.cocoapods.org/"/>
+            </config>
+            <pods>
+                <pod name="Analytics" spec="3.7.1"/>
+                <pod name="Segment-Appboy" spec="3.0.0"/>
+            </pods>
+        </podspec>
     </platform>
 </plugin>

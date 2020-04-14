@@ -69,6 +69,9 @@ Record attribution data from enabled providers using the mobile service. (Defaul
 #### flushQueueSize (Android and iOS)
 The queue size at which to flush events. (Default: 20, Max: 250 for Android and 100 for iOS) 
 
+#### enableBrazeIntegration (Android and iOS)
+Enable device-mode connection to the Braze destination 
+
 #### collectDeviceId (Android)
 Record the device id. (Default: true)
 
@@ -102,7 +105,8 @@ window.Segment.startWithConfiguration(IOS_OR_ANDROID_KEY, {
     trackApplicationLifecycleEvents: true,
     trackAttributionInformation: true,
     flushInterval: 60,
-    trackInAppPurchases: true
+    trackInAppPurchases: true,
+    enableBrazeIntegration: true
 });
 ```      
 
