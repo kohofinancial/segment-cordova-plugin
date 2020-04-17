@@ -24,6 +24,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+import com.segment.analytics.android.integrations.appboy.AppboyIntegration;
+
 public class SegmentCordovaPlugin extends CordovaPlugin {
 
     private static final String ACTION_WITH_CONFIGURATION = "startWithConfiguration";
@@ -129,6 +131,9 @@ public class SegmentCordovaPlugin extends CordovaPlugin {
                     if (obj.has("launchOptions")) {
                         options = toOptions(obj.optJSONObject("launchOptions"));
                         builder.defaultOptions(options);
+                    }
+                    if (obj.has("enableBrazeIntegration") && obj.optBoolean("enableBrazeIntegration") == true) {
+                        builder.use(AppboyIntegration.FACTORY);
                     }
                     // middleware, connectionFactory, optOut are not currently supported.
                 }
