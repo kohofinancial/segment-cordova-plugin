@@ -1,7 +1,7 @@
 # segment-cordova-plugin
 > Cordova plugin for [Segment mobile SDK](https://segment.com/docs/sources/#mobile)
 
-This version of the plugin uses versions `3.6.9` (iOS) and `4.3.0` (Android) of the Segment mobile SDK.
+This version of the plugin uses versions `3.7.1` (iOS) and `4.3.1` (Android) of the Segment mobile SDK.
 You can view Android and iOS SDK sources on Github.
 
 * https://github.com/segmentio/analytics-android

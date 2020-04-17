@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [4.0.0] - 2020-04-17
+- Support device mode connection to Braze destination
+
 ## [3.0.0] - 2020-01-13
 - Drop support for Mixpanel
 
